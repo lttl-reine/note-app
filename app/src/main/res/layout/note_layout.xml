@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/blue_border"
+            android:padding="16dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/noteTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="200"
+                    android:fontFamily="@font/poppins"
+                    android:text="Note Title"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/ib_color"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:layout_gravity="center"/>
+                </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noteDesc"
+                android:layout_marginTop="8dp"
+                android:maxHeight="170dp"
+                android:text="Description"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
